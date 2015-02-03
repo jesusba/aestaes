@@ -5,7 +5,7 @@ from django.db import models
 # Create your models here.
 
 class Cofradia(models.Model):
-    nombre = models.CharField(max_length=300)
+    nombre = models.CharField(max_length=500)
     nombrecorto = models.CharField(max_length=100)
     sede = models.CharField(max_length=50)
     annofundacion = models.IntegerField()
@@ -26,4 +26,4 @@ class Paso(models.Model):
     hora = models.DateTimeField()
     def __unicode__(self):
         return "%s, %s (%s)" % (self.cofradia,self.nombre,self.tipo)
-
+ 
