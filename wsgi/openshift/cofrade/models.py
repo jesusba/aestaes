@@ -21,10 +21,11 @@ class Paso(models.Model):
     tipo = models.CharField(max_length=20)
     diaprocesion = models.CharField(max_length=20)
     numcostaleros = models.IntegerField()
-    colorcapa = models.CharField(max_length=10, null=True)
+    colorcapa = models.CharField(max_length=10, blank=True)
     colorantifaz =  models.CharField(max_length=10)
     hora = models.DateTimeField()
     def __unicode__(self):
         return "%s, %s (%s)" % (self.cofradia,self.nombre,self.tipo)
  
+
 
