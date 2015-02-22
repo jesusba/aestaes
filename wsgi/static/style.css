@@ -54,8 +54,6 @@ a:hover {
 #wrapper {
 	overflow: hidden;
 	background: #FFFFFF url(images/cabecera.jpg) no-repeat center top;
-	width: 1200px;
-	height: 620px;
 }
 
 .container {
