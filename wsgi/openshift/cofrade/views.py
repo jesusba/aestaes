@@ -9,5 +9,6 @@ from cofrade import models
 from django.contrib.auth.models import User
 from cofrade.functions import *
 
-def login(request):
-    return render(request, 'home.html', {})
+def home(request):
+    return render_to_response('home.html')
+
