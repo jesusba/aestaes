@@ -41,9 +41,9 @@ Released   : 20121222
 		<div id="content">
 			<h1>Cofradías</h1>
 			<div class="entry">
-			{% for i in dia %}
+			{% for i in data_raw %}
 				<p>{{i.diaprocesion}}<p>
-				{% for i in data_raw %}
+				{% for i in nombrecofra %}
 					<p><a href="/cofradia/{{data.nombre}}">{{i.nombrecorto}}</a></p>
 					{% for i in nombre %}
 						<p><a href="/paso/{{data.nombre}}">{{i.nombre}}</a></p>

@@ -12,6 +12,5 @@ def nombrecofra(request):
     return render_to_response('cofradias.html',{'data_raw': cofradia})
 
 def nombrepaso(request):
-	cofradia = models.Cofradia.objects.all()
-	paso = models.Paso.objects.all()
-    return render_to_response('pasos.html',{'data_raw': nombrecofra , 'nombre': nombre, 'dia': diaprocesion})
+	dia = models.Paso.objects.all()
+    return render_to_response('pasos.html', {'data_raw': dia})
