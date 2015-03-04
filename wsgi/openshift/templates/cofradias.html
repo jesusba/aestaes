@@ -20,50 +20,54 @@ Released   : 20121222
 <link href="../../../static/style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
-<div id="menu-wrapper">
-	<div id="menu" class="container">
-		<ul>
-			<li><a href="/">Inicio</a></li>
-			<li class="current_page_item"><a href="cofradia.html">Cofradías</a></li>
-			<li><a href="#">Pasos</a></li>
-			<li><a href="#">Foro de Novedades</a></li>
-			<li><a href="#">Contacto</a></li>
-		</ul>
-	</div>
-</div>
-<div id="page" class="container">
-	<div id="content">
-		<div class="entry">
-		{% for i in data_raw %}
-		<p><a href="/cofradias/{{data.nombre}}">{{i.nombrecorto}}</a></p>
-		{% endfor %}
+<div id="wrapper">
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+				<li><a href="/">Inicio</a></li>
+				<li class="current_page_item"><a href="cofradia.html">Cofradías</a></li>
+				<li><a href="#">Pasos</a></li>
+				<li><a href="#">Foro de Novedades</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
 		</div>
 	</div>
-</div>
-<div id="sidebar1">
-	<div>
-		<h2>Cofradías más relevantes</h2>
-		<ul class="list-style2">
-			<li class="first"><a href="#">Hermandad de La Esperanza Macarena</a></li>
-			<li><a href="#">Hermandad de La Esperanza de Triana</a></li>
-			<li><a href="#">Hermandad de El Gran Poder</a></li>
-			<li><a href="#">Hermandad de La Estrella</a></li>
-			<li><a href="#">Hermandad de Los Gitanos</a></li>
-		</ul>			
+	<div id="page" class="container">
+		<div id="content">
+			<h1>Cofradías</h1>
+			<div class="entry">
+			{% for i in data_raw %}
+				<p><a href="/cofradias/{{data.nombre}}">{{i.nombrecorto}}</a></p>
+			{% endfor %}
+			</div>
+		</div>
 	</div>
-</div>
-<div id="sidebar2">
-	<div>
-		<h2>Pasos más relevantes</h2>
-		<ul class="list-style2">
-			<li class="first"><a href="#">El Gran Poder</a></li>
-			<li><a href="#">La Macarena</a></li>
-			<li><a href="#">Cristo de Los Gitanos</a></li>
-			<li><a href="#">Esperanza Triana</a></li>					
-			<li><a href="#">Jesús Despojado</a></li>
-			<li><a href="#">La Lanzada</a></li>
-		</ul>
+	<div id="sidebar1">
+		<div>
+			<h2>Cofradías más relevantes</h2>
+			<ul class="list-style2">
+				<li class="first"><a href="#">Hermandad de La Esperanza Macarena</a></li>
+				<li><a href="#">Hermandad de La Esperanza de Triana</a></li>
+				<li><a href="#">Hermandad de El Gran Poder</a></li>
+				<li><a href="#">Hermandad de La Estrella</a></li>
+				<li><a href="#">Hermandad de Los Gitanos</a></li>
+			</ul>			
+		</div>
 	</div>
+	<div id="sidebar2">
+		<div>
+			<h2>Pasos más relevantes</h2>
+			<ul class="list-style2">
+				<li class="first"><a href="#">El Gran Poder</a></li>
+				<li><a href="#">La Macarena</a></li>
+				<li><a href="#">Cristo de Los Gitanos</a></li>
+				<li><a href="#">Esperanza Triana</a></li>					
+				<li><a href="#">Jesús Despojado</a></li>
+				<li><a href="#">La Lanzada</a></li>
+			</ul>
+		</div>
+	</div>
+		<!-- end #sidebar -->
 </div>
 	<!-- end #page -->
 <div id="footer-content" class="container">
