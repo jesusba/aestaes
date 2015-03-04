@@ -33,12 +33,9 @@ Released   : 20121222
 		</div>
 	</div>
 	<div>
+		<h1>Cofradías</h1>
 		{% for i in data_raw %}
-			<p>{{i.nombrecorto}}</p>
-		{% endfor %}
-		<h1> Peliculas Vistas </h1>
-		{% for data in data_raw %}
-			<a href="/cofradias/{{data.nombre}}"></a>
+			<a href="{{i.nombrecorto}}"</a>
 		{% endfor %}
 		<div id="sidebar1">
 			<div>
