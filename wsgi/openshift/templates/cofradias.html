@@ -32,40 +32,43 @@ Released   : 20121222
 			</ul>
 		</div>
 	</div>
-	<div>
-		{% for i in data_raw %}
-			<p><a href="/cofradias/{{data.nombre}}">{{i.nombrecorto}}</a></p>
-		{% endfor %}
-		<div id="sidebar1">
-			<div>
-				<h2>Cofradías más relevantes</h2>
-				<ul class="list-style2">
-					<li class="first"><a href="#">Hermandad de La Esperanza Macarena</a></li>
-					<li><a href="#">Hermandad de La Esperanza de Triana</a></li>
-					<li><a href="#">Hermandad de El Gran Poder</a></li>
-					<li><a href="#">Hermandad de La Estrella</a></li>
-					<li><a href="#">Hermandad de Los Gitanos</a></li>
-				</ul>
+	<div id="page" class="container">
+		<div id="content">
+			<div class="entry">
+			{% for i in data_raw %}
+				<p><a href="/cofradias/{{data.nombre}}">{{i.nombrecorto}}</a></p>
+			{% endfor %}
 			</div>
 		</div>
-		<div id="sidebar2">
-			<div>
-				<h2>Pasos más relevantes</h2>
-				<ul class="list-style2">
-					<li class="first"><a href="#">El Gran Poder</a></li>
-					<li><a href="#">La Macarena</a></li>
-					<li><a href="#">Cristo de Los Gitanos</a></li>
-					<li><a href="#">Esperanza Triana</a></li>
-					<li><a href="#">Jesús Despojado</a></li>
-					<li><a href="#">La Lanzada</a></li>
-				</ul>
-			</div>
-		</div>
-		<!-- end #sidebar -->
 	</div>
-	<!-- end #page -->
-	
+	<div id="sidebar1">
+		<div>
+			<h2>Cofradías más relevantes</h2>
+			<ul class="list-style2">
+				<li class="first"><a href="#">Hermandad de La Esperanza Macarena</a></li>
+				<li><a href="#">Hermandad de La Esperanza de Triana</a></li>
+				<li><a href="#">Hermandad de El Gran Poder</a></li>
+				<li><a href="#">Hermandad de La Estrella</a></li>
+				<li><a href="#">Hermandad de Los Gitanos</a></li>
+			</ul>			
+		</div>
+	</div>
+	<div id="sidebar2">
+		<div>
+			<h2>Pasos más relevantes</h2>
+			<ul class="list-style2">
+				<li class="first"><a href="#">El Gran Poder</a></li>
+				<li><a href="#">La Macarena</a></li>
+				<li><a href="#">Cristo de Los Gitanos</a></li>
+				<li><a href="#">Esperanza Triana</a></li>					
+				<li><a href="#">Jesús Despojado</a></li>
+				<li><a href="#">La Lanzada</a></li>
+			</ul>
+		</div>
+	</div>
+		<!-- end #sidebar -->
 </div>
+	<!-- end #page -->
 <div id="footer-content" class="container">
 	<div id="footer-bg">
 		<div id="column1">
