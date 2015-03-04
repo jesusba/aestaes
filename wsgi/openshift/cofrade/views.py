@@ -10,3 +10,9 @@ def home(request):
 def nombrecofra(request):
     cofradia = models.Cofradia.objects.all()
     return render_to_response('cofradias.html',{'data_raw': cofradia})
+
+def nombrepaso(request):
+	cofradia = models.Cofradia.objects.all()
+	paso = models.Paso.objects.all().query
+	query.group_by = ['diaprocesion']
+    return render_to_response('pasos.html',{'data_raw': nombrecofra , 'nombre': nombre, 'dia': diaprocesion})

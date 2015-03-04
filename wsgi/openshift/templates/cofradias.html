@@ -25,11 +25,16 @@ Released   : 20121222
 		<div id="menu" class="container">
 			<ul>
 				<li><a href="/">Inicio</a></li>
-				<li class="current_page_item"><a href="cofradia.html">Cofradías</a></li>
-				<li><a href="#">Pasos</a></li>
+				<li class="current_page_item"><a href="/cofradia">Cofradías</a></li>
+				<li><a href="/paso">Pasos</a></li>
 				<li><a href="#">Foro de Novedades</a></li>
 				<li><a href="#">Contacto</a></li>
 			</ul>
+		</div>
+	</div>
+	<div id="header">
+		<div id="logo" class="container">
+			<h1><a href="#">A Esta Es!</a></h1>
 		</div>
 	</div>
 	<div id="page" class="container">
@@ -37,7 +42,7 @@ Released   : 20121222
 			<h1>Cofradías</h1>
 			<div class="entry">
 			{% for i in data_raw %}
-				<p><a href="/cofradias/{{data.nombre}}">{{i.nombrecorto}}</a></p>
+				<p><a href="/cofradia/{{data.nombre}}">{{i.nombrecorto}}</a></p>
 			{% endfor %}
 			</div>
 		</div>

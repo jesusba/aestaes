@@ -16,5 +16,5 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'openshift.cofrade.views.home'),
     url(r'^cofradia/$', 'openshift.cofrade.views.nombrecofra'),
-
+    url(r'^paso/$', 'openshift.cofrade.views.nombrepaso'),
 )
