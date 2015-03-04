@@ -13,6 +13,5 @@ def nombrecofra(request):
 
 def nombrepaso(request):
 	cofradia = models.Cofradia.objects.all()
-	paso = models.Paso.objects.all().query
-	query.group_by = ['diaprocesion']
+	paso = models.Paso.objects.all()
     return render_to_response('pasos.html',{'data_raw': nombrecofra , 'nombre': nombre, 'dia': diaprocesion})
