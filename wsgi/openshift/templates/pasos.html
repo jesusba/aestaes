@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Plasma
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20121222
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>A Esta Es!</title>
+<link href="http://fonts.googleapis.com/css?family=Oswald:400,300" rel="stylesheet" type="text/css" />
+<link href="../../../static/style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+				<li><a href="/">Inicio</a></li>
+				<li><a href="/cofradia">Cofradías</a></li>
+				<li class="current_page_item"><a href="/paso">Pasos</a></li>
+				<li><a href="#">Foro de Novedades</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="header">
+		<div id="logo" class="container">
+			<h1><a href="#">A Esta Es!</a></h1>
+		</div>
+	</div>
+	<div id="page" class="container">
+		<div id="content">
+			<h1>Cofradías</h1>
+			<div class="entry">
+			{% for i in dia %}
+				<p>{{i.diaprocesion}}<p>
+				{% for i in data_raw %}
+					<p><a href="/cofradia/{{data.nombre}}">{{i.nombrecorto}}</a></p>
+					{% for i in nombre %}
+						<p><a href="/paso/{{data.nombre}}">{{i.nombre}}</a></p>
+					{% endfor %}
+				{% endfor %}
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- end #page -->
+<div id="footer-content" class="container">
+	<div id="footer-bg">
+		<div id="column1">
+			<h2>A Esta Es!</h2>
+			<p>&copy; A Esta Es!</p>
+			<p>All rights reserved.</p>
+			<p>Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>
+		</div>
+		<div id="column2">
+			<h2>Links Recomendados</h2>
+			<ul class="list-style3">
+				<li class="first"><a href="http://www.semana-santa.org/">Semana Santa Sevilla</a></li>
+				<li><a href="http://sevilla.abc.es/pasionensevilla/">Pasión en Sevilla</a></li>
+				<li><a href="http://www.hermandades-de-sevilla.org/">Consejo General de Hermandades y Cofradías de Sevilla</a></li>
+			</ul>
+		</div>
+		<div id="column3">
+			<h2>Social</h2>
+			<ul class="list-style3">
+				<li class="https://twitter.com/semanasantasev"><a href="#">Twitter</a></li>
+				<li><a href="https://es-es.facebook.com/semanasantadesevilla">Facebook</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end #footer -->
+</body>
+</html>
