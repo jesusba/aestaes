@@ -25,25 +25,24 @@ Released   : 20121222
 		<div id="menu" class="container">
 			<ul>
 				<li><a href="/">Inicio</a></li>
-				<li class="current_page_item"><a href="/cofradia">Cofradías</a></li>
+				<li><a href="/cofradia">Cofradías</a></li>
 				<li><a href="/paso">Pasos</a></li>
-				<li><a href="#">Contacto</a></li>
+				<li class="current_page_item"><a href="/contacto">Contacto</a></li>
 			</ul>
 		</div>
 	</div>
 	<div id="page" class="container">
 		<div id="content">
-			<h1>Cofradías</h1>
-			<img src="/static/images/cofradia.jpg" style="width:1250px;height:400px">
+			<img src="/static/images/cabecera.jpg" style="width:1250px;height:400px">
+			<h2><a href="/">A Esta Es!</a></h2>
+			<h3>¿Te gusta esta página?</h3>
 			<div class="entry">
-			{% for i in data_raw %}
-				<p><a href="/cofradia/{{data.nombre}}">{{i.nombrecorto}}</a></p>
-			{% endfor %}
+				<p>Esta página ha sido realizada por <strong>Jesús Bueno Acosta</strong>.</p>
+				<p>Email:<strong>jesusba60@gmail.com</strong></p>
 			</div>
 		</div>
 	</div>
 </div>
-	<!-- end #page -->
 <div id="footer-content" class="container">
 	<div id="footer-bg">
 		<div id="column1">

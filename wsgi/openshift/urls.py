@@ -17,4 +17,5 @@ urlpatterns = patterns('',
     url(r'^$', 'openshift.cofrade.views.home'),
     url(r'^cofradia/$', 'openshift.cofrade.views.nombrecofra'),
     url(r'^paso/$', 'openshift.cofrade.views.nombrepaso'),
+    url(r'^contacto/$', 'openshift.cofrade.views.contacto'),
 )
