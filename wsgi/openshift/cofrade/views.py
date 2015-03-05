@@ -16,5 +16,5 @@ def nombrepaso(request):
     paso = Paso.objects.all()
     return render_to_response('pasos.html',{'data_raw': paso})
 
-def home(request):
+def contacto(request):
     return render_to_response('contacto.html')
