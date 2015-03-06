@@ -36,9 +36,13 @@ Released   : 20121222
 			<h1>Cofradías</h1>
 			<img src="/static/images/cofradia.jpg" style="width:1250px;height:400px">
 			<div class="entry">
-			{% for i in data_raw %}
-				<p><a href="/cofradia/{{i.id}}">{{i.nombrecorto}}</a></p>
-			{% endfor %}
+				<p>Nombre completo: {{data_raw.nombre}}</p>
+				<p>Nombre corto: {{data_raw.nombrecorto}}</p>
+				<p>Sede canónica: {{data_raw.sede}}</p>
+				<p>Año fundadcion: {{data_raw.annofundacion}}</p>
+				<p>Numero de hermanos: {{data_raw.numhermanos}}</p>
+				<p>Hermano Mayor: {{data_raw.hermanomayor}}</p>
+				<p>Número de nazarenos: {{data_raw.numnazarenos}}</p>
 			</div>
 		</div>
 	</div>

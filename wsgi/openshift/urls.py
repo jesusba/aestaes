@@ -18,4 +18,5 @@ urlpatterns = patterns('',
     url(r'^cofradia/$', 'openshift.cofrade.views.nombrecofra'),
     url(r'^paso/$', 'openshift.cofrade.views.nombrepaso'),
     url(r'^contacto/$', 'openshift.cofrade.views.contacto'),
+    url(r'^cofradia/(?P<cofradia_id>[0-9]{0,4})/$', 'openshift.cofrade.views.cofradetalle'),
 )

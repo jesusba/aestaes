@@ -18,3 +18,7 @@ def nombrepaso(request):
 
 def contacto(request):
     return render_to_response('contacto.html')
+
+def cofradetalle(request,cofradia_id):
+	infocofra = Cofradia.objects.get(id=cofradia_id)
+	return render_to_response('infocof.html', {"data_raw":infocofra},)
