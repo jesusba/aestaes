@@ -26,24 +26,29 @@ Released   : 20121222
 			<ul>
 				<li><a href="/">Inicio</a></li>
 				<li><a href="/cofradia">Cofradías</a></li>
-				<li><a href="/paso">Pasos</a></li>
-				<li class="current_page_item"><a href="/contacto">Contacto</a></li>
+				<li class="current_page_item"><a href="/paso">Pasos</a></li>
+				<li><a href="/contacto">Contacto</a></li>
 			</ul>
 		</div>
 	</div>
 	<div id="page" class="container">
 		<div id="content">
-			<h2><a href="/">A Esta Es!</a></h2>
-			<img src="/static/images/contacto.jpg" style="width:1250px;height:600px">
-			<h3>¿Te gusta esta página?</h3>
+			<h1>{{data_raw.nombre}}</h1>
+			<img src="/static/images/infopaso.jpg" style="width:1250px;height:400px">
 			<div class="entry">
-				<h3>Esta página ha sido realizada por <strong>Jesús Bueno Acosta</strong>.</h3>
-				<h3>Email:<strong>jesusba60@gmail.com</strong></h3>
-				<h3>Github: <a href="https://github.com/jesusba"><strong>jesusba</strong></a></h3>
+				<p><strong>Nombre: {{data_raw.nombre}}</strong></p>
+				<p><strong>Tipo: {{data_raw.tipo}}</strong></p>
+				<p><strong>Dia de Procesión: {{data_raw.diaprocesion}}</strong></p>
+				<p><strong>Número de costaleros: {{data_raw.numcostaleros}}</strong></p>
+				<p><strong>Color de Capa: {{data_raw.colorcapa}}</strong></p>
+				<p><strong>Color de Antifaz: {{data_raw.colorantifaz}}</strong></p>
+				<p><strong>Fecha de salida: {{data_raw.hora}}</strong></p>
+				<p><strong>Número de nazarenos: {{data_raw.numnazarenos}}</strong></p>
 			</div>
 		</div>
 	</div>
 </div>
+	<!-- end #page -->
 <div id="footer-content" class="container">
 	<div id="footer-bg">
 		<div id="column1">

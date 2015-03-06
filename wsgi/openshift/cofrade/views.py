@@ -22,3 +22,7 @@ def contacto(request):
 def cofradetalle(request,cofradia_id):
 	infocofra = Cofradia.objects.get(id=cofradia_id)
 	return render_to_response('infocof.html', {"data_raw":infocofra},)
+
+def pasodetalle(request,paso_id):
+	infopaso = Paso.objects.get(id=paso_id)
+	return render_to_response('infopaso.html', {"data_raw":infopaso},)
